@@ -21,9 +21,12 @@ function resetBars(){
 }
 
 function loadBars() {
-  for (i = 0; i < skill_count; i++) {
-    bar[i].animate(1);
-  }
+  bar[0].animate(0.8);
+  bar[1].animate(0.7);
+  bar[2].animate(0.6);
+  bar[3].animate(0.6);
+  bar[4].animate(0.4);
+  bar[5].animate(0.3);
 }
 
 function reloadBars(){
