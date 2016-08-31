@@ -1,0 +1,305 @@
+:root{
+  --dark-red:#710000;
+  --light-gray:#d0d0d0;
+  --dark-gray:#404040;
+  --light-green:#d6ffbf;
+}
+
+/* FONTS */
+header .intro-text .name {
+  font-family: "Jura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Jura", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/**/
+
+body {
+  background-color: var(--light-gray);
+}
+
+header{
+
+  color: #404040;
+  background-color: black;
+
+}
+
+.parallax {
+
+  position: relative;
+  /* The image used */
+  background-image: url('../img/banner.jpeg');
+
+  /* Full height */
+  height: 100%;
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#banner.row{
+  color: white;
+  padding-top: 100px;
+  text-align: left;
+}
+
+#skills {
+  background-image: url('../img/shadow.png');
+  background-position: 20% bottom;
+  background-size: 40%;
+  background-repeat: no-repeat;
+
+}
+
+
+.type-A{
+  background-color: var(--light-gray);
+}
+
+.type-B{
+  background-color: var(--dark-gray);
+  color: white;
+}
+
+.container{
+  padding-bottom: 50px;
+}
+
+/*-- Horizontal Divider --*/
+hr.line-A {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #d0d0d0, #404040, #d0d0d0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #404040, #d0d0d0);
+  background-image: -ms-linear-gradient(left, #d0d0d0, #404040, #d0d0d0);
+  background-image: -o-linear-gradient(left, #d0d0d0, #404040, #d0d0d0);
+}
+
+hr.line-B {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #404040, #d0d0d0, #404040);
+  background-image: -moz-linear-gradient(left, #404040, #d0d0d0, #404040);
+  background-image: -ms-linear-gradient(left, #404040, #d0d0d0, #404040);
+  background-image: -o-linear-gradient(left, #404040, #d0d0d0, #404040);
+}
+
+hr.line-C {
+  border: 0;
+  height: 1px;
+  width: 70%;
+  background-image: -webkit-linear-gradient(left, #FFFFFF, #000000, #FFFFFF);
+  background-image: -moz-linear-gradient(left, #FFFFFF, #000000, #FFFFFF);
+  background-image: -ms-linear-gradient(left, #FFFFFF, #000000, #FFFFFF);
+  background-image: -o-linear-gradient(left, #FFFFFF, #000000, #FFFFFF);
+}
+
+/*-- Buttons --*/
+div.border button {
+  color: black;
+  background: rgba(0,0,0,0);
+  border: solid 5px black;
+  width: 100%;
+
+}
+div.border button:hover,
+section.border button.hover {
+  border-color: #404040;
+  color: #404040;
+}
+div.border button:active,
+div.border button.active {
+  border-color: #404040;
+  color: #404040;
+}
+
+/*-- Project Icons --*/
+img.project-icon{
+  max-height: 75%;
+  max-width: 75%;
+}
+
+/*-- Modal --*/
+
+.portfolio-modal .modal-content{
+padding:0;
+}
+
+@media (min-width: 900px) {
+  .modal-xl {
+    width: 100%;
+   max-width:1200px;
+  }
+}
+
+/*-- Prog Bar --*/
+.bar {
+  margin: 20px;
+  width: auto;
+  height: 8px;
+}
+
+/*-- Triangle Dividers --*/
+
+.triangles::after {
+  position: absolute; content: '';
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+  transform: translateX(-50%) rotate(45deg);
+  /*bottom: -50px;*/
+
+  z-index: 10;
+  background: inherit;
+  background-image: none;
+  }
+
+  /*-- Invisible Triangle --*/
+
+  #et-main-area { overflow: hidden;} /* Hides all the items that float over the right margin */
+
+  .big-triangle:after,.big-triangle:before {
+    content:'';
+    position:absolute;
+    bottom: 0%;
+    width:50%;
+    z-index:100;
+    border-bottom:50px solid var(--light-gray );
+    -moz-transform:rotate(0.000001deg);
+    -webkit-transform:rotate(0.000001deg);
+    -o-transform:rotate(0.000001deg);
+    -ms-transform:rotate(0.000001deg);
+    transform:rotate(0.000001deg);
+  }
+
+  .big-triangle:before{
+    right:50%;
+    border-right:75px solid transparent;
+    border-left:1000px solid;}
+
+  .big-triangle:after{
+    left:50%;
+    border-left:75px solid transparent;
+    border-right:1000px solid;}
+
+
+    /*-- Nav Bar --*/
+
+    /*----- Menu -----*/
+    @media screen and (min-width: 860px) {
+      .menu {
+        width:100%;
+        /*padding:10px 10px;*/
+        box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+        border-radius:3px;
+        background: var(--dark-gray);
+        text-align: center;
+        /*border: 1px solid red;*/
+      }
+    }
+
+    .menu ul {
+      display:inline-block;
+      padding-top: 10px;
+    }
+
+    .menu li {
+      margin:0px 50px 0px 0px;
+      float:left;
+      list-style:none;
+      font-size:17px;
+    }
+
+    .menu li:last-child {
+      margin-right:0px;
+    }
+
+    .menu a {
+      text-shadow:0px 1px 0px rgba(0,0,0,0.5);
+      color:#777;
+      transition:color linear 0.15s;
+    }
+
+    .menu a:hover, .menu .current-item a {
+      text-decoration:none;
+      color:var(--light-green);
+    }
+
+    /*----- Responsive -----*/
+    @media screen and (max-width: 1150px) {
+      .wrap {
+        width:90%;
+      }
+    }
+
+    @media screen and (max-width: 860px) {
+      .menu {
+        position:relative;
+        display:inline-block;
+      }
+
+      .menu ul.active {
+        display:none;
+      }
+
+      .menu ul {
+        width:100%;
+        position:absolute;
+        top:120%;
+        left:0px;
+        padding:10px 18px;
+        box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+        border-radius:3px;
+        background:#303030;
+      }
+
+      .menu ul:after {
+        width:0px;
+        height:0px;
+        position:absolute;
+        top:0%;
+        left:22px;
+        content:'';
+        transform:translate(0%, -100%);
+        border-left:7px solid transparent;
+        border-right:7px solid transparent;
+        border-bottom:7px solid #303030;
+      }
+
+      .menu li {
+        margin:5px 0px 5px 0px;
+        float:none;
+        display:block;
+      }
+
+      .menu a {
+        display:block;
+      }
+
+      .toggle-nav {
+        padding:20px;
+        float:left;
+        display:inline-block;
+        box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+        border-radius:3px;
+        background:#303030;
+        text-shadow:0px 1px 0px rgba(0,0,0,0.5);
+        color:#777;
+        font-size:20px;
+        transition:color linear 0.15s;
+      }
+
+      .toggle-nav:hover, .toggle-nav.active {
+        text-decoration:none;
+        color:#66a992;
+      }
+
+    }
