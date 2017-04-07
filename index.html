@@ -42,12 +42,13 @@
       </div>
 
       <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
+        <!-- <ul class="nav navbar-nav">
           <li class="navbar-link"><a href="#top">Top</a></strong></li>
           <li class="navbar-link"><a href="#skills">Skills</a></strong></li>
+          <li class="navbar-link"><a href="#projects">Projects</a></strong></li>
           <li class="navbar-link"><a href="#contact">Contact</a></strong></li>
           <li class="navbar-link"><a href="#resume">Resume</a></strong></li>
-        </ul>
+        </ul> -->
       </div><!--/.nav-collapse -->
     </div><!--/.container-fluid -->
   </nav>
@@ -194,9 +195,10 @@
             <div class="row">
               <div class="container">
                 <div class="col-md-12">
-                  <p> I use relational database for my projects but I plan on using non-relational databases in the future if the opportunity arise.</p>
                   <ul>
-                    <strong><li>SQL</strong> and some of its variants</li>
+                    <strong><li>PostgreSQL</strong></li>
+                    <strong><li>SQLite</strong></li>
+                    <strong><li>Firebase</strong></li>
                   </ul>
                 </div>
               </div>
@@ -237,13 +239,33 @@
   </div>
   <div class="content-body">
     <div class="panel-group" id="projects">
+        <div class="panel panel-default">
+          <div class="panel-heading select-black" data-toggle="collapse" href="#project1">
+            <div class="panel-title">
+              <h5><img class="center icon" src="./img/projects/traveldex.png"> &nbsp; TravelDex </h5>
+            </div>
+          </div>
+          <div id="project0" class="panel-collapse">
+            <div class="panel-body">
+              <div class="row">
+                <div class="container">
+                  <div class="col-md-12">
+                    <p> An app which lets users keep tracks of their favorite spots in different cities. Implemented using <strong>Firebase</strong> platform. By logging in with their google account, users may add existing spots to their favorite lists, add pictures and also add a new location that is not yet listed.
+                    </p>
+                    <button class="btn-outline" onclick="window.open('https://traveldexfinal.firebaseapp.com')" ><h5>See live version of the app</h5></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       <div class="panel panel-default">
         <div class="panel-heading select-black" data-toggle="collapse" href="#project1">
           <div class="panel-title">
             <h5><img class="center icon" src="./img/projects/compendium.png"> &nbsp; Demon Compendium </h5>
           </div>
         </div>
-        <div id="project1" class="panel-collapse collapse">
+        <div id="project1" class="panel-collapse">
           <div class="panel-body">
             <div class="row">
               <div class="container">
